@@ -49,3 +49,12 @@ table {
     font-family: arial;
     font-size: 0.7em;
 }
+
+.container-tambah {
+    margin: 5% 15%;
+    padding: 5% 20%;
+    background-color: rgba(247, 247, 247, 0.89);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px rgba(46, 46, 46, 0.411);
+}
