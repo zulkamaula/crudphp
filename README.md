@@ -2,5 +2,5 @@
 Membuat Aplikasi CRUD dengan PHP (Script Logic Only)
 
 ## Tampilan DEMO Aplikasi
-![DEMO-CRUD-PHP](https://user-images.githubusercontent.com/74296102/100420314-ce687500-30b8-11eb-8308-8145c1e223b9.gif)
+![DEMO-CRUD-PHP](https://user-images.githubusercontent.com/74296102/100421965-f907fd00-30bb-11eb-9fe2-af7806970a39.gif)
 
