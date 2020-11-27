@@ -72,7 +72,7 @@ if (isset($_POST["login"])) {
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-login">
         <h1>Halaman Login</h1>
 
         <?php if (isset($error)) : ?>

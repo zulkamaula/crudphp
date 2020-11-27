@@ -34,3 +34,18 @@ ul {
 li {
     margin-bottom: 5px;
 }
+
+.container-login {
+    margin: 5% 15%;
+    padding: 5% 20%;
+    background-color: rgba(247, 247, 247, 0.89);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px rgba(46, 46, 46, 0.411);
+}
+
+table {
+    display: inline-block;
+    font-family: arial;
+    font-size: 0.7em;
+}

@@ -48,6 +48,7 @@ if (isset($_POST["cari"])) {
 
     <link rel="icon" href="img/ICON.png">
     <title>Halaman Admin</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -60,45 +61,47 @@ if (isset($_POST["cari"])) {
     <br><br>
 
     <!-- membuat fitur searching -->
-    <form action="" method="post" class="form-cari">
+    <div class="container-index">
+        <form action="" method="post" class="form-cari">
 
-        <input type="text" name="keyword" size="30" autofocus placeholder="Massukkan keyword.." autocomplete="off" id="keyword">
-        <button type="submit" name="cari" id="tombol-cari">Cari!</button>
+            <input type="text" name="keyword" size="30" autofocus placeholder="Massukkan keyword.." autocomplete="off" id="keyword">
+            <button type="submit" name="cari" id="tombol-cari">Cari!</button>
 
-        <img src="img/loader.gif" class="loader">
-    </form>
-    <br>
+            <img src="img/loader.gif" class="loader">
+        </form>
+        <br>
 
-    <div id="container">
-        <table border="1" cellpadding="10" cellspacing="0">
-
-            <tr>
-                <th>No.</th>
-                <th class="aksi">Aksi</th>
-                <th>Gambar</th>
-                <th>NPM</th>
-                <th>Nama</th>
-                <th>E-Mail</th>
-                <th>Jurusan</th>
-            </tr>
-            <?php $i = 1; ?>
-            <?php foreach ($mahasiswa as $row) : ?>
+        <div id="container">
+            <table border="1" cellpadding="10" cellspacing="0">
 
                 <tr>
-                    <td><?= $i; ?></td>
-                    <td class="aksi">
-                        <a href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a> |
-                        <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('yakin?'); ">Hapus</a>
-                    </td>
-                    <td><img src="img/<?= $row["gambar"]; ?>" width="50"></td>
-                    <td><?= $row["npm"]; ?></td>
-                    <td><?= $row["nama"]; ?></td>
-                    <td><?= $row["email"]; ?></td>
-                    <td><?= $row["jurusan"]; ?></td>
+                    <th>No.</th>
+                    <th class="aksi">Aksi</th>
+                    <th>Gambar</th>
+                    <th>NPM</th>
+                    <th>Nama</th>
+                    <th>E-Mail</th>
+                    <th>Jurusan</th>
                 </tr>
-                <?php $i++; ?>
-            <?php endforeach; ?>
-        </table>
+                <?php $i = 1; ?>
+                <?php foreach ($mahasiswa as $row) : ?>
+
+                    <tr>
+                        <td><?= $i; ?></td>
+                        <td class="aksi">
+                            <a href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a> |
+                            <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm('yakin?'); ">Hapus</a>
+                        </td>
+                        <td><img src="img/<?= $row["gambar"]; ?>" width="50"></td>
+                        <td><?= $row["npm"]; ?></td>
+                        <td><?= $row["nama"]; ?></td>
+                        <td><?= $row["email"]; ?></td>
+                        <td><?= $row["jurusan"]; ?></td>
+                    </tr>
+                    <?php $i++; ?>
+                <?php endforeach; ?>
+            </table>
+        </div>
     </div>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/script.js"></script>
