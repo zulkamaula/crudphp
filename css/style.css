@@ -9,15 +9,6 @@ body {
     color: lightslategray;
 }
 
-.container {
-    margin: 5% 15%;
-    padding: 5% 20%;
-    background-color: rgba(247, 247, 247, 0.89);
-    border-radius: 15px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 6px rgba(46, 46, 46, 0.411);
-}
-
 button {
     margin: 10px;
     color: lightslategray;
@@ -35,14 +26,6 @@ li {
     margin-bottom: 5px;
 }
 
-.container-login {
-    margin: 5% 15%;
-    padding: 5% 20%;
-    background-color: rgba(247, 247, 247, 0.89);
-    border-radius: 15px;
-    box-sizing: border-box;
-    box-shadow: 0px 0px 6px rgba(46, 46, 46, 0.411);
-}
 
 table {
     display: inline-block;
@@ -50,6 +33,7 @@ table {
     font-size: 0.7em;
 }
 
+.container-login,
 .container-tambah {
     margin: 5% 15%;
     padding: 5% 20%;
@@ -57,4 +41,21 @@ table {
     border-radius: 15px;
     box-sizing: border-box;
     box-shadow: 0px 0px 6px rgba(46, 46, 46, 0.411);
+}
+
+.container-ubah {
+    position: relative;
+    margin: 2% 15%;
+    padding: 5% 20%;
+    background-color: rgba(247, 247, 247, 0.89);
+    border-radius: 15px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 6px rgba(46, 46, 46, 0.411);
+}
+
+li.gambar {
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    right: 0;
 }

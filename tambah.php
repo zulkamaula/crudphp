@@ -49,7 +49,7 @@ if (isset($_POST["submit"])) {
 </head>
 
 <body>
-    <div class="contianer-tambah">
+    <div class="container-tambah">
         <h1>Tambah Data Mahasiswa</h1>
         <form action="" method="post" enctype="multipart/form-data">
             <ul>
