@@ -68,39 +68,41 @@ if (isset($_POST["login"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Login</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+    <div class="container">
+        <h1>Halaman Login</h1>
 
-    <h1>Halaman Login</h1>
+        <?php if (isset($error)) : ?>
+            <p style="color: red; font-style: italic;"> username / password salah! </p>
+        <?php endif; ?>
 
-    <?php if (isset($error)) : ?>
-        <p style="color: red; font-style: italic;"> username / password salah! </p>
-    <?php endif; ?>
+        <form action="" method="post">
+            <ul>
+                <li>
+                    <label for="username">Username :</label>
+                    <input type="text" name="username" id="username">
+                </li>
 
-    <form action="" method="post">
-        <ul>
-            <li>
-                <label for="username">Username :</label>
-                <input type="text" name="username" id="username">
-            </li>
+                <li>
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="password">
+                </li>
 
-            <li>
-                <label for="password">Password :</label>
-                <input type="password" name="password" id="password">
-            </li>
+                <li>
+                    <input type="checkbox" name="remember" id="remember">
+                    <label for="remember">Remember me</label>
+                </li>
 
-            <li>
-                <input type="checkbox" name="remember" id="remember">
-                <label for="remember">Remember me</label>
-            </li>
+                <li>
+                    <button type="submit" name="login">Login!</button>
+                </li>
+            </ul>
 
-            <li>
-                <button type="submit" name="login">Login!</button>
-            </li>
-        </ul>
-
-    </form>
+        </form>
+    </div>
 </body>
 
 </html>
